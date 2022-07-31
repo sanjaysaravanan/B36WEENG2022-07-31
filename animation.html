@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+
+    .parent {
+      height: 400px;
+      width: 400px;
+      background-color: green;
+      /* Transition Property */
+      transition: 4s cubic-bezier(0.65,-0.07, 0.03, 1.16);
+      /* text-align: center; */
+      position: relative;
+      overflow: hidden;
+    }
+
+    .parent .child {
+      position: absolute;
+      right: -300px;
+      transition: color 500ms ease, right 500ms ease;
+      width: 300px;
+    }
+
+    .parent:hover{
+      opacity: 0.8;
+      /* background-color: greenyellow; */
+      /* color: black; */
+    }
+
+    .parent:hover .child {
+      right: 100px;
+      color: white;
+    }
+
+    .parent:hover .child-2 {
+      right: 100px;
+      color: green;
+    }
+
+    .div-out {
+      height: 400px;
+      width: 400px;
+      background-color: blue;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+    }
+
+    .div-in {
+      height: 100px;
+      width: 100px;
+      background-color: red;
+      /* transition: 2s ease; */
+      animation: sample-animation 2s ease-in infinite alternate;
+    }
+
+    /* .div-out:hover .div-in { */
+      /* transform: rotate(360deg); */
+      /* transform: translateY(300px); */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      
+    /* } */
+
+    @keyframes sample-animation {
+      0% {
+        transform: translateY(0);
+      }
+
+      25% {
+        transform: translateY(300px);
+      }
+
+      50% {
+        transform: translate(300px, 300px);
+      }
+
+      75% {
+        transform: translateX(300px);
+      }
+
+      100% {
+        transform: translateX(0px);
+      }
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <!-- <div class="parent">
+    <div class="child">
+      <h1>Country Name</h1>
+      <h1>Country Currency</h1>
+      <h1>Country Language</h1>
+    </div>
+  </div> -->
+
+  <div class="div-out">
+    <div class="div-in"></div>
+  </div>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+@import "mixins";
+
+.parent {
+  @include divBlock(red, 100px);
+}
+
+.parent-two {
+  @include divBlock(blue, 200px);
+}
+
+.parent-three {
+  @include divBlock(green, 300px);
+  &:hover {
+    background-color: red;
+  }
+}
+
+
+.grand-parent {
+
+  @extend header;
+
+  background-color: $primebackground;
+
+  &:hover {
+    .parent {
+      background-color: green;
+    }
+  }
+
+  .parent {
+    border: 10px solid blue;
+  }
+  .parent-two {
+    border: 10px solid green;
+  }
+
+  .parent-three {
+    border: 10px solid red;
+  }
+
+  height: 100px - 30px;
+}

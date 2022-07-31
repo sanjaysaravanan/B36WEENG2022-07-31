@@ -1,0 +1,21 @@
+
+Topics:
+
+  CSS Transition/Animation
+
+  Transition: props duration timing-function; height 1000ms ease-in-out;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+    eg: animation: sample-animation 2s ease-in infinite alternate;
+      sample-animation ---> keyframes definition
+
+  SASS & SCSS
+    variable
+    nested structure
+    import other css _file
+    mixins, params in mixins
+    extend
+
+  Bootstrap Customization
+    Download the Source and Compile and create a bootstrap.css for using it in html
+
+  Building an Country Flags and Search Country Application

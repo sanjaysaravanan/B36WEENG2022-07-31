@@ -1,0 +1,64 @@
+.base-style {
+  background-color: honeydew;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header, .grand-parent {
+  width: 1000px;
+}
+
+.parent {
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin: 16px;
+}
+
+.parent-two {
+  height: 100px;
+  width: 200px;
+  background-color: blue;
+  margin: 16px;
+}
+
+.parent-three {
+  height: 100px;
+  width: 300px;
+  background-color: green;
+  margin: 16px;
+}
+
+.parent-three:hover {
+  background-color: red;
+}
+
+.grand-parent {
+  background-color: #3cff00;
+  height: 70px;
+}
+
+.grand-parent:hover .parent {
+  background-color: green;
+}
+
+.grand-parent .parent {
+  border: 10px solid blue;
+}
+
+.grand-parent .parent-two {
+  border: 10px solid green;
+}
+
+.grand-parent .parent-three {
+  border: 10px solid red;
+}
+/*# sourceMappingURL=style.css.map */

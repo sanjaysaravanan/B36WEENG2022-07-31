@@ -1,0 +1,21 @@
+@mixin divBlock($divcolor, $divwidth) {
+  height: 100px;
+  width: $divwidth;
+  background-color: $divcolor;
+  margin: 16px;
+}
+
+$primebackground: rgb(60, 255, 0);
+
+.base-style {
+  background-color: honeydew;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 1000px;
+}
+
